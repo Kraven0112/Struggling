@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop</title>
+</head>
+<body>
+    <h1>Using loop as an object to show fruits in console. </h1>
+    <p class="p"></p>
+    <input type="button" value="Click" onclick="loop()">
+    <script>
+        function loop()
+        {
+            let fruit = ["Grape","Mango","Orange","Banana","Litchee"]
+            for( let i=0; i<fruit.length; i++)
+
+            {
+                console.log("From loop-",fruit[i]);
+                // document.write("From loop-",fruit[i])
+                // document.getElementById("p").innerHTML=(frui[i]);
+            }
+        }
+    </script>
+</body>
+</html>
