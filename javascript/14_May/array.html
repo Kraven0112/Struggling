@@ -6,6 +6,22 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <input type="button" value="Loop" onclick="fruitloop(),fruitmap()">
+    <script>
+       function fruitloop()
+       {
+        let fruits=["Mango","Grape","Banana","Litchee","Apple","Orange"]
+        for(let i=0;i<fruits.length;i++)
+        {
+            console.log("loop value-",fruits[i])
+        }
+       }
+       function fruitmap()
+       {
+        let fruits=["Mango","Grape","Banana","Litchee","Apple","Orange"]
+
+        fruits.map(s => (console.log("From map-",s)))
+       }
+    </script>
 </body>
 </html>
