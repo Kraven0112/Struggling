@@ -1,0 +1,31 @@
+
+<script>
+ function* birthday(){
+    yield "one piece of cake"
+    yield "Two piece of cake"
+    yield "three piece of cake -- warning"
+    yield " extra extra warning"
+ }
+ let saliram=birthday()
+ console.log("sali--",saliram.next())
+ console.log("sali--",saliram.next())
+ console.log("sali--",saliram.next())
+
+ let dinu = birthday()
+ console.log("Dinesh--",dinu.next())
+ console.log("Dinesh--",dinu.next())
+ console.log("Dinesh--",dinu.next())
+
+ console.log("sali--",saliram.next())
+
+ console.log("Dinesh--",dinu.next())
+
+
+function* pujaa()
+{
+    yield "one theli prasad"
+    yield " two theli prasad"
+    yield "3 theli prasad and get warning"
+
+}
+</script>
