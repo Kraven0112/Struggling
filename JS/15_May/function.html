@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    <input type="button" value="Click" onclick="memo()">
+    <script>
+        function memo()
+        {
+            let a = 1
+            let b = 2
+            let c = 3
+
+            a=b
+            b=c
+            c=a
+            console.log(a,b,c)
+        }
+        console.log("BigInt-",BigInt(9999999999999999))
+
+        {
+            var age=20 //it is easily accessed from outside the block.
+        }
+        console.log(age) // calling age from out the block. provide 20 as expected output.
+
+        {
+            let num1=23 // it is not accessed from outerside of the block.
+            const num2=25//it is also not accessed from outer side of the block.
+        }
+        console.log(num1) // provide num1 is not defined------ error
+        console.log(num2) // provide num2 is not defined------ error
+    </script>
+</body>
+</html>
