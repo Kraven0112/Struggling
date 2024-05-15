@@ -1,0 +1,22 @@
+<script>
+function* makeMoney()
+{
+    //We have only four returns in this generator function
+    yield "Do as you can to earn money."
+    yield "Do that which skills you have related to earn money."
+    yield "Do hard work to make money."
+    yield " Do smart work to earn money."
+}
+let income = makeMoney()
+console.log("Income",income.next())// prototype is object and shows false.
+
+console.log("Income",income.next()) // prototype is object and shows false.
+
+console.log("Income",income.next()) // prototype is object and shows false.
+
+console.log("Income",income.next()) // prototype is object and shows false.
+
+console.log("Income",income.next()) // But this show us true because all four yield process are done show it shows us true.
+
+// It means we can do te tasks as given in yield value. It is the most important keyword yield to takr generator function in javascript.
+</script>
