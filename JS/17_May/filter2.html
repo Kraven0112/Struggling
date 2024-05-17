@@ -1,0 +1,14 @@
+<script>
+     let quantity=[400,500,300,200,100,900,800,700]
+    function getAge(quantity)
+    {
+        return quantity<500
+    }
+    console.log(quantity.filter(getAge)) //Expected output is 100 200 300 400
+
+    function getAge1(quantity)
+    {
+        return quantity>500
+    }
+    console.log(quantity.filter(getAge1))//Expected output is 700 800 900
+</script>
