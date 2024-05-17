@@ -1,0 +1,34 @@
+<script>
+   let fruit = [
+    {name:'Mango',price:200,quantity:7},
+    {name:'Banana',price:300,quantity:4},
+    {name:'JAckfruit',price:150,quantity:2},
+    {name:'Litchee',price:400,quantity:5},
+    {name:'Apple',price:350,quantity:6}
+   ]
+   function check44(fruit)
+    {
+        return fruit.quantity<5
+    }
+    console.log(fruit.find(check44))
+//    fruit.map((f) => (console.log(f)))
+  
+    // find method for apple
+  const check=(cow)=>{
+    return cow.name=='Apple' }
+    console.log(fruit.find(check)) //Expected output is apple properties and key vale of apple fruit.
+
+
+    const check2=(goat)=>{
+        return goat.price>400
+    }
+    console.log(fruit.find(check2)) //Expected output is undefined.
+
+
+    const check3 =(iife)=>{
+        return iife.quantity==2
+    }
+    console.log(fruit.find(check3))//Expected output is allnabout jackfruit
+
+   
+</script>

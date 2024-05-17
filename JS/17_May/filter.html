@@ -1,0 +1,22 @@
+<script>
+    let fruit = [
+    {name:'Mango',price:200,quantity:3},
+    {name:'Banana',price:300,quantity:4},
+    {name:'JAckfruit',price:150,quantity:2},
+    {name:'Litchee',price:400,quantity:5},
+    {name:'Apple',price:350,quantity:6}
+   ]
+   const check2=(fruit)=>{
+        return fruit.quantity<6
+    }
+    console.log(fruit.filter(check2)) //Expected value are all fruits name which price is less 400
+
+
+
+    
+    function check44(fruit)
+    {
+        return fruit.price<400
+    }
+    console.log(fruit.filter(check44))
+</script>
