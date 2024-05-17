@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduce</title>
+</head>
+<body>
+    <div id="groot"></div>
+    
+    <script>
+        let num = [2,2,4,4,5,5,6,6]
+
+        const uniqueNum = num.reduce((give, get) => {
+            if (!give.includes(get)) {
+             give.push(get);
+             }
+            return give;
+            }, []);
+                console.log(uniqueNum)
+    </script>
+</body>
+</html>
