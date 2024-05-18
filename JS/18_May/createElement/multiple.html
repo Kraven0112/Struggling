@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Elements creation in html using javascript.</h1>
+    <div id="room-1"></div>
+    <div id="room-2"></div>
+    <div id="room-3"></div>
+    <div id="room-4"></div>
+</body>
+
+<script>
+    // parent1 starts
+
+    let parent1 = document.getElementById('room-1')
+    console.log(parent1)
+
+    let img1 = document.createElement('img')
+    img1.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb5z6MCCSYYRWCiVDmoNaRZ1qEwl6MlQCOzkSBJbdMlg&s'
+    parent1.appendChild(img1)
+
+    let img2 = document.createElement('img')
+    img2.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb5z6MCCSYYRWCiVDmoNaRZ1qEwl6MlQCOzkSBJbdMlg&s'
+    parent1.appendChild(img2)
+
+    let img3 = document.createElement('img')
+    img3.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb5z6MCCSYYRWCiVDmoNaRZ1qEwl6MlQCOzkSBJbdMlg&s'
+    parent1.appendChild(img3)
+
+    let img4 = document.createElement('img')
+    img4.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb5z6MCCSYYRWCiVDmoNaRZ1qEwl6MlQCOzkSBJbdMlg&s'
+    parent1.appendChild(img4)
+
+    let p_parent1 = document.createElement('p')
+    p_parent1.innerText = 'Nature is wonderful. I hope everyperson can feel the nature to know exact things about nature.'
+    parent1.appendChild(p_parent1)
+
+
+    // parent2 starts
+    let parent2 = document.getElementById('room-2')
+    console.log(parent2)
+
+    let h1 = document.createElement('h1')
+        h1.innerText = 'Happy New Year ==== h1'
+        parent2.appendChild(h1)
+
+        let h2 = document.createElement('h2')
+        h2.innerText = 'Happy New Year ==== h2'
+        parent2.appendChild(h2)
+
+        let h3 = document.createElement('h3')
+        h3.innerText = 'Happy New Year ==== h3'
+        parent2.appendChild(h3)
+
+        let h4 = document.createElement('h4')
+        h4.innerText = 'Happy New Year ==== h4'
+        parent2.appendChild(h4)
+
+        let h5 = document.createElement('h5')
+        h5.innerText = 'Happy New Year ==== h5'
+        parent2.appendChild(h5)
+
+        let h6 = document.createElement('h6')
+        h6.innerText = 'Happy New Year ==== h6'
+        parent2.appendChild(h6)
+
+    // parent3 starts
+    let parent3 = document.getElementById('room-3')
+    console.log(parent3)
+
+    let code = document.createElement('code')
+    code.innerText = 'This is code in html. It looks like tiny ants roaming around all elements in page.'
+    parent3.appendChild(code).style.fontWeight=900;
+
+
+    //parent4 starts
+    let parent4 = document.getElementById('room-4')
+    console.log(parent4)
+
+    let span = document.createElement('span')
+    span.innerText = 'I am span'
+    parent4.appendChild(span).style.fontWeight=900;
+</script>
+</html>

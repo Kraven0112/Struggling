@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Element creation in html using javascript.</h1>
+    <div id="room">
+
+    </div>
+
+
+    <script>
+        let parent = document.getElementById('room')
+        console.log(parent)
+        
+        let h1 = document.createElement('h1')
+        h1.innerText = 'Happy New Year ==== h1'
+        parent.appendChild(h1)
+
+        let h2 = document.createElement('h2')
+        h2.innerText = 'Happy New Year ==== h2'
+        parent.appendChild(h2)
+
+        let h3 = document.createElement('h3')
+        h3.innerText = 'Happy New Year ==== h3'
+        parent.appendChild(h3)
+
+        let h4 = document.createElement('h4')
+        h4.innerText = 'Happy New Year ==== h4'
+        parent.appendChild(h4)
+
+        let h5 = document.createElement('h5')
+        h5.innerText = 'Happy New Year ==== h5'
+        parent.appendChild(h5)
+
+        let h6 = document.createElement('h6')
+        h6.innerText = 'Happy New Year ==== h6'
+        parent.appendChild(h6)
+
+
+        let p = document.createElement('p')
+        p.innerText = 'Wish you all Happy New Year. May god responds your all good works and always be happy in your life.'
+        p.appendChild(p)
+    </script>
+</body>
+</html>
