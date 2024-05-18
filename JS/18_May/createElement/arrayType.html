@@ -20,10 +20,13 @@
 
     <script>
         let div = document.getElementById('room')
+        console.log(div)
 
-        let make1 = document.createElement('h2')
+        for(let i=0; i<20; i++){
+            let h2 = document.createElement('h2')
         h2.innerText ='Happy New Year'
         div.appendChild(h2)
+        }
     </script>
 </body>
 </html>
