@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State</title>
+    <style>
+        h2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="get">
+
+    </h2>
+    <script>
+        let h2 = document.getElementById('get')
+
+        let sec=0
+        let minute=0
+        let hour=0
+        let period='AM'
+        setInterval(() => {
+            if(sec==59)
+        {
+            sec=0
+            minute++
+        }
+        if(minute==59)
+        {
+            minute=0
+            hour++
+        }
+        if(hour>12)
+        {
+            period='PM'
+        }
+            h2.innerHTML=`${hour}:${minute}:${sec++} ${period}`
+        },0.1);
+       
+   
+       
+    </script>
+</body>
+</html>
