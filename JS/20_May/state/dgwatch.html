@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>State</title>
     <style>
-        h2{
+        body{
             display: flex;
             align-items: center;
             justify-content: center;
+            min-height: 70vh;
+            background-color: black;
+            color: white;
+            font-size: 3em;
         }
     </style>
 </head>
@@ -38,8 +42,8 @@
         {
             period='PM'
         }
-            h2.innerHTML=`${hour}:${minute}:${sec++} ${period}`
-        },0.1);
+            h2.innerHTML=`${hour} : ${minute} : ${sec++} ${period}`
+        },1000);
        
    
        
