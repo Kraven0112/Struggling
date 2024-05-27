@@ -1,0 +1,18 @@
+<!-- Closures means bundles of functions having their lexical scope -->
+<script>
+function maroon()
+{
+
+    let name='Sushil Shah'
+    function one()
+    {
+        // let name='Sushil'
+        console.log(name) //output will be Rakesh
+    }
+    name='Rakesh Tripathi' //lexicalscope for function one()
+     name='Milan Bhandari'
+     return one
+}
+one=maroon()
+one()
+</script>

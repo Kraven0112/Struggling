@@ -1,0 +1,15 @@
+<!-- lexical scope is concepr determinig the scope of variables according to their declaratioon. -->
+
+
+<script>
+    let a=10 //it has global scope 
+
+    function game(){
+        let a=20 // it has block or functional  level scope
+        console.log(a); //indicating local variable 
+    }
+    game()
+    console.log(a);//indicating global variable 
+
+
+</script>
