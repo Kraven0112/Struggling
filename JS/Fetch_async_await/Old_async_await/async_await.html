@@ -1,0 +1,17 @@
+<script>
+    //lets create promise
+    const p1=new Promise((resolve,reject)=>{
+        resolve("It is my first promise to bring infront of you.")
+    })
+
+    async function getPromise()
+    {
+        return p1 //returning promise-p1
+    }
+
+    const getdata=getPromise() //assigning promise-p1
+
+    // console.log(getdata)//it will shows promise 
+
+    getdata.then(resolve=>console.log(resolve)) //ouput is It is my first promise to bring infront of you.
+</script>

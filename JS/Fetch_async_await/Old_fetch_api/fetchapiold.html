@@ -1,0 +1,13 @@
+<script>
+    const api=fetch('https://api.bigdatacloud.net/data/reverse-geocode-client')
+
+    api.then((link1)=>{
+        console.log(link1.status)//check status from 200-299
+        console.log(link1.ok) //if API relies between 200-299 then it will give true
+       return  link1.text()//convert into javascript object and we can use other instead of json like for string text
+    })
+
+    .then((link2)=>{ 
+        console.log(link2)
+    })
+</script>

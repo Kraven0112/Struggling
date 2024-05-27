@@ -1,0 +1,17 @@
+<script>
+    const api='https://api.bigdatacloud.net/data/reverse-geocode-client'
+
+    async function getapi()
+    {
+       try{
+        const data = await fetch(api)
+        const actualData = await data.text()
+        console.table(actualData)
+       }
+       catch(err)
+       {
+        console.log(err)
+       }
+    }
+    getapi()
+</script>
