@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Corona Api</h1>
+</body>
+</html>
+<script>
+   fetch('https://data.covid19india.org/data.json')
+   .then(response => response.json())
+   .then(data =>console.log(data));
+</script>
