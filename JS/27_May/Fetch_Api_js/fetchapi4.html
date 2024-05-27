@@ -1,0 +1,13 @@
+<script>
+    const api=fetch('https://jsonplaceholder.typicode.com/comments')
+    api.then((link1)=>{
+        console.log(link1.status)
+        console.log(link1.ok)
+        console.log(link1.statusText)
+        return link1.text()
+        // console.log(link1);
+    })
+    .then((link2)=>{
+        console.log(link2)
+    })
+</script>
