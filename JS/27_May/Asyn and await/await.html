@@ -1,11 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+<script>
+    //create new promise which will resolve("All right you get the promise.")
+    const ap= new Promise((resolve,reject)=>{
+        resolve("All right you get the promise.")
+    })
+
+
+    //created async function
+  async function get()
+  {
+    return ap
+  }
+   
+  //getting promise from async function
+   const getPromise=get()
+   getPromise.then(resolve=>console.log(resolve))
+</script>

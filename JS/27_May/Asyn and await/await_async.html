@@ -1,0 +1,36 @@
+<script>
+    const promise1= new Promise((resolve,reject)=>{
+       setTimeout(()=>{
+        resolve("Hello I am Resolve1.")
+       },10000)
+    })
+
+    const promise2= new Promise((resolve,reject)=>{
+       setTimeout(()=>{
+        resolve("Hello I am Resolve2.")
+       },5000)
+    })
+    async function getPromise()
+    {
+       console.log("Before first resolve")
+        const data1= await promise1
+        console.log("corona")
+        console.log(data1)
+
+
+        const data2= await promise2
+        console.log("corona")
+        console.log(data2)
+    }
+    // async function getPromise2(){
+         
+      
+    // }
+
+    //js engine will not wait for the promise and print marry
+    console.log("marry")
+    getPromise()
+    // getPromise2()
+   
+
+</script>
