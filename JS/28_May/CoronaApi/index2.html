@@ -1,0 +1,51 @@
+
+<html>
+   <div>
+    <p id="group"></p>
+    <p id="group1"></p>
+    <p id="group2"></p>
+    <p id="group3"></p>
+    <p id="group4"></p>
+    <p id="group5"></p>
+    <p id="group6"></p>
+    <p id="group7"></p>
+    <p id="group8"></p>
+    <p id="group9"></p>
+    <p id="group10"></p>
+
+   </div>
+</html>
+<script>
+    const show = document.getElementById('group')
+    const show1 = document.getElementById('group1')
+    const show2 = document.getElementById('group2')
+    const show3 = document.getElementById('group3')
+    const show4 = document.getElementById('group4')
+    const show5 = document.getElementById('group5')
+    const show6 = document.getElementById('group6')
+    const show7 = document.getElementById('group7')
+    const show8 = document.getElementById('group8')
+    const show9 = document.getElementById('group9')
+    const show10 = document.getElementById('group10')
+    
+    async function getApi(value)
+    {
+        const data = await fetch('https://api.bigdatacloud.net/data/reverse-geocode-client')
+
+        const newData = await data.json()
+
+        show.innerText =`Latitude = ${newData.latitude}`
+        show1.innerText = `LookupSource = ${newData.lookupSource}`
+        show2.innerText = `Longitude = ${newData.longitude}`
+        show3.innerText = `LocalityLanguageRequested = ${newData.localityLanguageRequested}`
+        show4.innerText = `Continent = ${newData.continent}`
+        show5.innerText = `ContinentCode = ${newData.continentCode}`
+        show6.innerText = `CountryName = ${newData.countryName}`
+        show7.innerText = `CountryCode = ${newData.countryCode}`
+        show8.innerText = `PrincipalSubdivision = ${newData.principalSubdivision}`
+        show9.innerText = `PrincipalSubdivisionCode = ${newData.principalSubdivisionCode}`
+        show10.innerText = `City = ${newData.city}`
+    }
+    getApi()
+
+</script>
