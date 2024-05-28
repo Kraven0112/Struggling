@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 80%;
+            max-width: 400px;
+            border: 2px solid;
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+
+            padding: 25px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div>
+        <input type="text" placeholder="Enter name of city" id="city-input">
+        <button id="search-button">Search</button>
+    </div>
+    <div>
+        <h3 id="city-name"></h3>
+       <h5 id="city-time"></h5>
+       <p id="city-temp"></p>
+    </div>
+</div>
+    <script src="./script.js"></script>
+</body>
+</html>
