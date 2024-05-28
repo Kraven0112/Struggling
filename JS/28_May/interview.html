@@ -4,16 +4,14 @@
 
     for(let i=0;i<data.length;i++)
     {
-        folder=data[i]
-
-        console.log(folder);
-        // if(data[i]=='{')
-        // {
-        //     push.folder(data[i])
-        // }
-        // else{
-        //     pop.folder(data[i])
-        // }
+        if(data[i]=='{}' ||'()')
+        {
+            folder.push(data[i])
+        }
+        else{
+            folder.push(data[i])
+        }
     }
+    console.log(folder)
     
 </script>
