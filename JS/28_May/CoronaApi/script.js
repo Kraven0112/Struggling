@@ -26,7 +26,7 @@ button.addEventListener('click',()=>{
 
     const actualData = getApi(inputData)
 
-    dc.innerText = actualData.cases_time_series.[0].dailyconfirmed
+    dc.innerText = actualData.cases_time_series.dailyconfirmed
 
     dd.innerText = actualData.cases_time_series.dailydeceased
 
