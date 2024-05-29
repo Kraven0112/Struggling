@@ -14,7 +14,7 @@ async function getApi(cityName)
 
 button.addEventListener('click',async()=>{
     const value= input.value  
-    const actualData = await getApi(value)  //getApi will take value from here and make search in api above in async function
+    const actualData = await getApi(value)  //getApi() will take value from here and make search in api above in async function
 
     cityName.innerText = `Location : ${actualData.location.name},${actualData.location.region},${actualData.location.country}`
 
