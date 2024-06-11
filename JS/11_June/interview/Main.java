@@ -13,7 +13,7 @@ class Animal {
   
   public class Main {
     public static void main(String[] args) {
-      Animal animal = new Dog();
+      Animal animal = new Animal();
       animal.makeSound(); // Prints "Woof!"
     }
   }
